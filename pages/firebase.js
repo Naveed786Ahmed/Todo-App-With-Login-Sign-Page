@@ -3,20 +3,19 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, se
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCzopToh8val4SXjmgELBvvZPvuTwVQz5g",
-    authDomain: "todo-app-30228.firebaseapp.com",
-    projectId: "todo-app-30228",
-    storageBucket: "todo-app-30228.appspot.com",
-    messagingSenderId: "595836119371",
-    appId: "1:595836119371:web:0ebb8e6aa7020b2dbc20ce",
-    measurementId: "G-TCZHPZZ9DE"
+    apiKey: "AIzaSyDXvL5dxVXZY9oGtq-ssEtnea8TPinwOTI",
+    authDomain: "crud-application-4f33f.firebaseapp.com",
+    projectId: "crud-application-4f33f",
+    storageBucket: "crud-application-4f33f.appspot.com",
+    messagingSenderId: "164304286464",
+    appId: "1:164304286464:web:cdcc1d537b85df19b879e5"
 };
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
-export{
+export {
     auth,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,

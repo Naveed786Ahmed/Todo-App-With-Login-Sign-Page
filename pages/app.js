@@ -15,6 +15,7 @@ const loginBtn = document.getElementById("loginBtn");
 const forgetPass = document.getElementById("forgetPass");
 const loginGoogle = document.getElementById("loginGoogle");
 
+
 const Signupfx = () => {
     const email = document.getElementById("email");
     const password = document.getElementById("pass");
@@ -63,7 +64,7 @@ const forgetPassfux = () => {
         });
 }
 
-const loginGooglefux = () => {
+const loginGooglefux = () => {    
     signInWithPopup(auth, provider)
         .then((result) => {
             const credential = GoogleAuthProvider.credentialFromResult(result);
